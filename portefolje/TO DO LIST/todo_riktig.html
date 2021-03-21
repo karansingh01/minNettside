@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>to do list</title>
+    <style media="screen">
+#info{
+  margin-top: 20px;
+  font-size: 25px;
+}
+h1{
+  font-style: oblique;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+#info>li{
+  list-style:none;
+  background-color: lightblue;
+  border-radius: 5px;
+  margin: 1% 20%;
+  padding: 8px;
+  text-align: left;
+}
+
+input[type=checkbox]{
+  margin-right: 40px;
+}
+
+#inpHusk {
+  padding-right: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+
+button{
+  padding: 9px;
+  margin:5px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body{
+  background-color: salmon;
+  text-align: center;
+}
+
+  </style>
+  </head>
+  <body>
+  <h1>TO DO LIST</h1>
+
+  <input id="inpHusk" type="text" name="" value="" autofocus placeholder="Ting å huske">
+  <button id="btnLeggTil" type="button" name="button">Legg til</button>
+
+  <ul id="info">
+
+  </ul>
+<h3 id="antall_gjort">gjort 0 av 0</h3>
+<script src="todo.js" charset="utf-8"></script>
+  </body>
+</html>
