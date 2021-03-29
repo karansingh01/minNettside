@@ -3,7 +3,6 @@ html{
 }
 
 /*css for hele body når den er større enn 600px starter under her*/
-@media only screen and (min-width: 600px) {
   body {
     /*gjør slik at det ikke er noe avstand mellom body og det som er utenfor*/
     margin: 0px;
@@ -11,9 +10,9 @@ html{
     /*gir body en bakgrunnsfarge*/
     background-color: #dbdde0;
   }
-}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 890px) {
 footer{
   display: none;
 }
@@ -39,7 +38,7 @@ tr>th>a{
 
 
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
   .header_øverst {
     text-align: center;
     /* styler tekst*/
@@ -51,7 +50,12 @@ tr>th>a{
     height: 755px;
   }
 }
+@media only screen and (max-width: 1199px) {
+.header_øverst{
+  display: none;
+}
 
+}
 
 
 .knapp_header>a{
@@ -160,6 +164,7 @@ img:hover{
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
 }
 
 /* Style the tab buttons */
@@ -172,7 +177,7 @@ img:hover{
   cursor: pointer;
   padding: 24px 16px;
   margin-top: 0px;
-  font-size: 17px;
+  font-size: 1.4vw;
   width: 20%;
 }
 
@@ -236,14 +241,13 @@ transition: all ease-in-out 350ms;
 
 
 /*css for main større enn 600px starter under her*/
-@media only screen and (min-width: 600px) {
   main {
     /* endrer plassering og bakgrunn */
     margin: 0px 0px;
     background-color: #fff2ea;
     padding-top: 40px;
   }
-}
+
 
 .main_hoved{
   /* styler tekst. */
@@ -278,12 +282,18 @@ font-size: 50px;
 
 
 .profilimg{
-height: 90%;
 width: 60%;
 padding: 0px;
 margin: 0px;
-
 }
+
+@media only screen and (max-width: 1000px) {
+.profilimg{
+  padding-top: 5%;
+width: 90%;
+}
+}
+
 #cv{
   display: block;
   margin:auto;
@@ -399,7 +409,7 @@ img{
 }
 
 /*Footer starter her*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .hele_footer {
     background-color: black;
     color: white;
@@ -407,11 +417,24 @@ img{
     grid-template-columns: repeat(4, 1fr);
     text-decoration: none;
     font-weight: normal;
-    padding: 60px 100px;
-    margin: 0px;
+    padding: 5% 10%;
+    padding-top: 3%;
+  }
+}
+/*
+@media only screen and (max-width: 900px) {
+  .om_oss_footer>table {
+    display: none;
+  }
+  .sosial_footer{
+    display: none;
+  }
+  .hele_footer{
+    background-color: black;
   }
 }
 
+*/
 th>a {
   text-decoration: none;
   color: white;
@@ -436,8 +459,13 @@ tbody {
   font-weight: lighter;
 }
 .om_oss_footer{
-  padding-top:30px;
+  margin-top: 30px;
+  padding:30px;
 }
+
 .sosial_footer{
-  padding-top: 20px;
+  font-size: 20px;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: normal;
 }
