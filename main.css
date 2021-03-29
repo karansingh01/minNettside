@@ -305,6 +305,16 @@ width: 90%;
   color: black;
 }
 
+#cv:hover{
+  box-shadow: 2px 2px 4px 2px;
+}
+
+#cv:checked{
+  transition: 1s;
+  background-color: green;
+
+}
+
 .alt_lært{
   background-color: #f7edf0;
   display: block;
