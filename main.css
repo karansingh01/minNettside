@@ -13,6 +13,29 @@ html{
   }
 }
 
+@media only screen and (max-width: 600px) {
+footer{
+  display: none;
+}
+
+
+tr>th>a{
+  display: none;
+}
+
+.hele_footer{
+  display: none;
+}
+
+.om_oss_footer{
+  display: none;
+}
+.mine_sider{
+  display: block;
+}
+
+}
+
 
 
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
@@ -126,6 +149,7 @@ grid-column: span 10;
 
 header{
   background-image: url(bilder/astronomy-beautiful-clouds-355465.jpg);
+
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
@@ -337,7 +361,6 @@ display: block;
 .mine_nettsider{
   background-color: #f2e1e7;
   margin: 0px;
-  padding: 0px 150px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
@@ -399,14 +422,6 @@ td>a {
   color: white;
 }
 
-@media only screen and (min-width: 600px) {
-  .sosbilder {
-    width: 40px;
-    height: 40px;
-    border-radius: 15px;
-    margin: 15px;
-  }
-}
 
 thead {
   text-decoration: underline;
