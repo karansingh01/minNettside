@@ -352,11 +352,11 @@ display: block;
     color: white; /* White text color */
   }
 
-  .html {width: 97%; background-color: #4CAF50;} /* Green */
-  .css {width: 96%; background-color: #2196F3;} /* Blue */
-  .js {width: 80%; background-color: #f44336;} /* Red */
-  .pyt {width: 85%; background-color: salmon;}
-  .java {width: 75%; background-color: blue;}
+  .html {width: 85%; background-color: #4CAF50;} /* Green */
+  .css {width: 80%; background-color: #2196F3;} /* Blue */
+  .js {width: 75%; background-color: #f44336;} /* Red */
+  .pyt {width: 80%; background-color: salmon;}
+  .java {width: 65%; background-color: blue;}
 
 
 
